@@ -264,7 +264,9 @@ td:hover img {
 /* ====================================================== */
 .showcase {
   padding-bottom: 2em;
-  background: white;
+  background: url('../images/showcase-background.jpg');
+  background-size:100% 100%;
+  color:white;
 }
 
 h3 {
@@ -295,6 +297,10 @@ h3 {
   background: url("../images/surf-and-paddle-preview.png") no-repeat;
 }
 
+.interception-preview {
+  background: url('../images/interception-preview.png');
+}
+
 .project-preview {
   height: 75%;
   background-size: 100% 100%;
@@ -306,7 +312,7 @@ h3 {
 .project-preview:hover {
   -webkit-transform: translateY(-7px);
   transform: translateY(-7px);
-  box-shadow: 0 2px 8px #333;
+  box-shadow: 0 2px 8px #8e99b8;
 }
 
 .project-links {
@@ -314,6 +320,7 @@ h3 {
   height: 20%;
 }
 .project-links .button {
+  border:1px solid white;
   font-size: .7em;
   font-weight: 200;
   letter-spacing: .5px;
@@ -341,17 +348,24 @@ h3 {
   font-size: .65em;
   margin: 0;
 }
-.right ul {
-  list-style: circle;
-}
-.right ul li {
-  margin-left: 20px;
-  font-size: .65em;
-}
 
 h5 {
   margin-top: .1em;
-  font-size: .7em;
+  font-size: 1em;
+}
+
+.right ul {
+  margin-left:-20px;
+}
+
+.right li {
+  display:inline;
+  background:white;
+  color:#333;
+  padding:2px 5px;
+  border-radius: 2px;
+  margin-left: 20px;
+  font-size: .65em;
 }
 
 /* ====================================================== */
@@ -487,16 +501,25 @@ h5 {
   .project {
     height: auto;
   }
-  .project p {
-    border: 1px solid black;
-    padding: 20px;
-    background: #d1d8eb;
+  .project .right {
+    padding:20px 0;
+    background: #1660A5;
     border-radius: 2px;
-    box-shadow: 0 1px 3px #ddd;
+    margin-bottom:10px;
+    width:80%;
+    margin:0 auto;
+  }
+
+  .project p {
+    padding:0 5px;
+  }
+
+  .project ul {
+    padding: 0 4px;
   }
 
   .project-preview {
-    width: 320px;
+    width: 60%;
     height: 175px;
     margin: 0 auto;
   }
@@ -509,7 +532,6 @@ h5 {
   }
   .showcase .left ul,
   .showcase .right ul {
-    width: 48%;
     margin: 0 auto;
   }
   .showcase .left ul li,
@@ -518,6 +540,10 @@ h5 {
   }
 }
 @media (max-width: 700px) {
+  .project-preview {
+    width:70%;
+  }
+
   header {
     font-size: 1em;
   }
@@ -547,6 +573,13 @@ h5 {
     width: 65px;
   }
 }
+
+@media (max-width:500px) {
+  .project-preview {
+    width:100%;
+  }
+}
+
 @media (max-width: 450px) {
   .contact ul li {
     margin: 0 .1em;
