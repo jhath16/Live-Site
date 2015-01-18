@@ -66,6 +66,9 @@ header {
   box-sizing: border-box;
   background: linear-gradient(#2a2a2a, #0F0D0F 90%);
   padding: .6em 2em .4em 2em;
+  position:fixed;
+  top:0;
+  width:100%;
 }
 header ul {
   float: right;
