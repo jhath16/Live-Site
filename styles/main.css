@@ -566,6 +566,10 @@ h5 {
     padding: 0;
   }
 
+  header {
+    position:static;
+  }
+
   .skills img {
     height: 65px;
     width: 65px;

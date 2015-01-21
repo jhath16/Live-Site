@@ -4,6 +4,19 @@ $(document).ready(function () {
 	
 	$('.offset').css('height',headerHeight);
 
+	console.log($('.background')[0]);
+
+	$(window).resize(function () {
+		$('.offset').css('height',$('header').outerHeight());
+		console.log('resize function fired');
+
+		var pageWidth = $(window).width();
+
+		if (pageWidth <= 575) {
+			$('.offset').css('height',0);
+		}
+	})
+
 	$('header li').click(function (e) {
 		var targ = '.' + e.target.id;
 
