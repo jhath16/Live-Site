@@ -594,6 +594,6 @@ h5 {
 
 @media (max-width: 450px) {
   .contact ul li {
-    margin: 0 .1em;
+    margin: 0;
   }
 }
