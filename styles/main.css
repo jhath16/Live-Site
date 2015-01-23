@@ -512,7 +512,7 @@ h5 {
   .project .right {
     padding:20px 0;
     background: #1660A5;
-    border-radius: 2px;
+    border-radius: 15px;
     margin-bottom:10px;
     width:80%;
     margin:0 auto;
@@ -567,7 +567,7 @@ h5 {
   }
 
   header {
-    position:static;
+    display:none;
   }
 
   .skills img {

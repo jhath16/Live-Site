@@ -4,6 +4,10 @@ $(document).ready(function () {
 	
 	$('.offset').css('height',headerHeight);
 
+	if( $(window).width() <= 575) {
+		$('.offset').css('height',0);
+	}
+
 	console.log($('.background')[0]);
 
 	$(window).resize(function () {
@@ -19,6 +23,8 @@ $(document).ready(function () {
 
 	$('header li').click(function (e) {
 		var targ = '.' + e.target.id;
+
+		var headerHeight = $('header').outerHeight();
 
 		$('body').animate({
 			scrollTop: $(targ).last().offset().top - headerHeight
