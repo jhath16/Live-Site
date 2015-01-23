@@ -8,11 +8,8 @@ $(document).ready(function () {
 		$('.offset').css('height',0);
 	}
 
-	console.log($('.background')[0]);
-
 	$(window).resize(function () {
 		$('.offset').css('height',$('header').outerHeight());
-		console.log('resize function fired');
 
 		var pageWidth = $(window).width();
 
