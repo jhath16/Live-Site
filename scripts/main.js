@@ -11,10 +11,8 @@ $(document).ready(function () {
 	$(window).resize(function () {
 		$('.offset').css('height',$('header').outerHeight());
 
-		var pageWidth = $(window).width();
-
-		if (pageWidth <= 575) {
-			$('.offset').css('height',0);
+		if ($(window).width() >= 1000) {
+			$('header').hide().show(0);
 		}
 	})
 
