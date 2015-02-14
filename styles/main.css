@@ -158,7 +158,6 @@ header li:active {
   to {
     -webkit-transform: translatey(0);
     transform: translatey(0);
-    background-attachment: fixed;
   }
 }
 @keyframes background-pan {
@@ -169,7 +168,6 @@ header li:active {
   to {
     -webkit-transform: translatey(0);
     transform: translatey(0);
-    background-attachment: fixed;
   }
 }
 .text-animation {
