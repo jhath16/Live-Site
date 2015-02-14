@@ -1,8 +1,6 @@
 $(document).ready(function () {
-
-	var headerHeight = $('header').outerHeight();
 	
-	$('.offset').css('height',headerHeight);
+	$('.offset').css('height', $('header').outerHeight() );
 
 	if( $(window).width() <= 575) {
 		$('.offset').css('height',0);
